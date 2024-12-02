@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth scaling effect for buttons */
+        .button-animate {
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .button-animate:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Section -->
+    <div class="flex justify-between items-center px-8 py-6 lg:px-16 lg:py-8 w-full max-w-screen-2xl mx-auto">
+        <!-- Logo and Hiring Button -->
+        <div class="flex items-center gap-3">
+            <img src="https://github.com/khawarahemad/tailwindlandpage01/raw/main/public/assets/Logo.svg" alt="Logo" class="h-12">
+            <button class="bg-gradient-to-r from-orange-400 to-red-400 text-xs text-white px-4 py-2 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                Hoster Is Hiring
+            </button>
+        </div>
+        
+        <!-- Navigation Links (Desktop) -->
+        <ul class="hidden lg:flex gap-8 text-lg text-gray-800 font-semibold">
+            <li><a href="#" class="transition duration-300 hover:text-orange-500">Explore Plans</a></li>
+            <li><a href="#" class="transition duration-300 hover:text-orange-500">Find Domain</a></li>
+            <li><a href="#" class="transition duration-300 hover:text-orange-500">Why Hoster</a></li>
+        </ul>
+
+        <!-- Join Waitlist Button (Desktop) -->
+        <div class="hidden lg:flex justify-center">
+            <button class="bg-gradient-to-r from-red-400 to-blue-400 text-xs text-white px-4 py-2 rounded-lg shadow-md button-animate hover:bg-blue-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                Join Waitlist
+            </button>
+        </div>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <div class="lg:hidden flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Body Section -->
+    <div class="lg:flex lg:items-center lg:justify-between px-8 lg:px-16 w-full max-w-screen-2xl mx-auto py-12">
+        <div class="lg:w-1/2 lg:order-2 flex items-center justify-center relative">
+            <img src="https://github.com/khawarahemad/tailwindlandpage01/raw/main/public/assets/Blue-Shape.svg" alt="1st" class="-rotate-45 h-64 md:h-92 lg:h-[400px]" />
+            <img src="https://github.com/khawarahemad/tailwindlandpage01/raw/main/public/assets/Pink-Shape.svg" alt="2nd" class="absolute -rotate-[35deg] h-64 md:h-72 lg:h-[400px]" />
+            <img src="https://github.com/khawarahemad/tailwindlandpage01/raw/main/public/assets/Purple-Shape.svg" alt="3rd" class="absolute -rotate-[15deg] h-64 md:h-72 lg:h-[400px]" />
+            <img src="https://github.com/khawarahemad/tailwindlandpage01/raw/main/public/assets/Hero-Model.png" alt="Hero" class="absolute h-64 md:h-72 lg:h-[400px]" />
+        </div>
+        <div class="lg:w-1/2 lg:order-1 space-y-9">
+            <h1 class="text-5xl font-bold font-playfair leading-tight">
+                Host Your Website in less than 5 minutes
+            </h1>
+            <p class="text-2xl font-light font-lato">
+                With Hoster, your website is always up. It needs a maximum of 5 minutes with the most affordable pricing.
+            </p>
+            <form action="" class="flex flex-col gap-4 md:flex-row">
+                <input class="rounded-md px-8 py-3 placeholder:text-gray-400" type="email" placeholder="example123@host.com" />
+                <button class="rounded-md px-4 py-3 bg-gradient-to-r from-red-400 to-blue-400 text-xs text-white ">
+                    Join Waitlist
+                </button>
+            </form>
+            <div class="flex items-center gap-2">
+                <img src="https://github.com/khawarahemad/tailwindlandpage01/raw/main/public/assets/Checkmark.svg" alt="Tick" />
+                <p class="font-lato text-gray-400">
+                    No spam ever. Unsubscribe anytime.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="gap-12 md:flex-row md:justify-between px-8 lg:px-16 w-full max-w-screen-2xl mx-auto py-8">
+        <div class="flex flex-col gap-12">
+            <ul class="flex gap-4 font-lato">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter/X</a></li>
+            </ul>
+        </div>
+        <div class="flex gap-4 items-center bg-gradient-to-r from-blue-400 to-purple-500 p-4 rounded-md shadow-lg hover:shadow-2xl transition duration-300 ease-in-out">
+            <img src="https://github.com/khawarahemad.png" alt="Khawar Ahemad" class="w-12 h-12 rounded-full border-2 border-white" />
+            <div>
+                <p class="font-playfair text-lg">Have Any Questions?</p>
+                <p class="text-sm">Contact us; we’re happy to help!</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
